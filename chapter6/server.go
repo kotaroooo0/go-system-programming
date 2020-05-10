@@ -32,6 +32,9 @@ func main() {
 				panic(err)
 			}
 			fmt.Println(string(dump))
+
+			// time.Sleep(time.Duration(time.Millisecond * 500))
+
 			res := http.Response{
 				StatusCode: 200,
 				ProtoMajor: 1,
